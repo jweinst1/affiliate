@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script type="text/javascript">
+    var currentLoc = window.location.href.split("?");
+    if (currentLoc.length > 1) {
+        var locRx = /loc=([0-9]+)/;
+        var foundLoc = currentLoc[1].match(locRx);
+        console.log("Got " + foundLoc);
+        window.location.href = "https://www.amazon.com/gp/product/B01LBKQJN4?pf_rd_r=56H0TTW4Z9B1Y5SZKH67&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=7c220057-db8f-4ac5-a883-fb87e493bf30&pd_rd_w=BFy0B&pd_rd_wg=hTFTy&ref_=pd_gw_unk";
+    }
+    window.location.href;
+</script>
+
+</body>
+</html>
